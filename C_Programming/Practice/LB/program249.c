@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int StrlenX(const char *str)
+{
+    int iCount = 0;
+
+    while(*str != '\0')
+    {
+        iCount++;
+        str++;      // str = str + 1
+    }
+    return iCount;
+}
+
+int main()
+{
+    char Arr[50] = {'\0'};
+    int iRet = 0;
+
+    printf("Enter String : \n");
+    scanf("%[^'\n']s",Arr);     
+
+    iRet = StrlenX(Arr);
+
+    printf("The length of string is : %d\n",iRet);
+
+    return 0;
+}
