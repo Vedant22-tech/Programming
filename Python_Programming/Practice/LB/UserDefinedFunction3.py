@@ -1,0 +1,13 @@
+# Accept : one parameter
+# Return : one value
+
+def Marvellous(Value):
+    print("Inside Marvellous : ",Value)
+    return 21
+
+def main():
+    Ret = Marvellous(11)
+    print("Retuen value is : ",Ret)
+
+if __name__ == "__main__":
+    main()
